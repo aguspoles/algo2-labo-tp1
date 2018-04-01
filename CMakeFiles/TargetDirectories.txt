@@ -1,0 +1,15 @@
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/install.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/list_install_components.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/correrTests.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/install/strip.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/install/local.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/install.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/list_install_components.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/gtest.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/gtest_main.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/install/strip.dir
+/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/CMakeFiles/install/local.dir

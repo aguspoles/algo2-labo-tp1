@@ -1,4 +1,9 @@
 # Prerequisites
+.vscode
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+correrTests
 *.d
 
 # Compiled Object files
