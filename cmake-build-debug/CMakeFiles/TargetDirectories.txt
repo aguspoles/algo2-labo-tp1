@@ -1,0 +1,15 @@
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/install/strip.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/correrTests.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/install/local.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/install.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/CMakeFiles/list_install_components.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/list_install_components.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/gtest.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/gtest_main.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/install/local.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/install.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/edit_cache.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/rebuild_cache.dir
+D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/CMakeFiles/install/strip.dir
