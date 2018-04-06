@@ -6,4 +6,7 @@
 #include "../src/Calculadora.h"
 
 
-TEST(test_calculadora,
+TEST(test_calculadora, prog){
+    Programa p;
+
+}

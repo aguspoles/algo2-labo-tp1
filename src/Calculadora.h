@@ -20,6 +20,8 @@ class Calculadora{
 
     private:
     Programa _programa;
+    Id _id;
+    int _value;
 };
 
 
