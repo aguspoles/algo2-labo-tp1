@@ -35,13 +35,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
@@ -58,13 +58,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
@@ -132,13 +132,13 @@
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
@@ -156,13 +156,13 @@
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
@@ -180,13 +180,13 @@
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
@@ -204,13 +204,13 @@
 				<Compiler>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/include"/>
 					<Add directory="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/bin/../lib/gcc/x86_64-w64-mingw32/5.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/Haskell Platform/8.0.2/mingw/lib/gcc/../../include/c++/5.2.0/backward"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
@@ -261,12 +261,6 @@
 		</Unit>
 		<Unit filename="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\google-test\"/>
-		</Unit>
-		<Unit filename="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\tests\google-test\"/>
-		</Unit>
-		<Unit filename="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
 		</Unit>
 		<Unit filename="D:/Tomy/Documentos/Facu/AED2/Labo/TP1/algo2-labo-tp1/tests/google-test/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
