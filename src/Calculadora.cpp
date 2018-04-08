@@ -1,7 +1,7 @@
 #include "Calculadora.h"
 
 Calculadora::Calculadora(Programa p){
-    _programa = p;
+    Calculadora = ;
 
 }
 
