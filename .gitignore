@@ -1,8 +1,8 @@
 # Prerequisites
 .vscode
 CMakeCache.txt
-Makefile
-cmake_install.cmake
+*Makefile
+*cmake_install.cmake
 correrTests
 .idea
 CMakeFiles
