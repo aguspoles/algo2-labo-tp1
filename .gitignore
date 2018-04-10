@@ -7,6 +7,10 @@ correrTests
 .idea
 CMakeFiles
 cmake-build-debug
+*.am
+*.ac
+
+
 *.d
 
 # Compiled Object files
