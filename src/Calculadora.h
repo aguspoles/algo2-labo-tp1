@@ -19,6 +19,7 @@ class Calculadora{
     int valorVariable(Id idVariable) const;
 
     private:
+//    Calculadora _calc;
     Programa _programa;
     Id _id;
     int _value;

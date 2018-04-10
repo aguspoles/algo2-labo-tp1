@@ -7,9 +7,15 @@
 
 TEST(test_calculadora, prog){
     Programa p;
-    EXPECT_EQ(calculadora c(p), p)
-
+    Calculadora c(p);
+    c.asignarVariable("x", 38);
+    p.agregarInstruccion("MAIN", Instruccion(READ, "x"));
+    p.agregarInstruccion("MAIN", Instruccion(PUSH, 2));
+    p.agregarInstruccion("MAIN", Instruccion(ADD));
+    p.agregarInstruccion("MAIN", Instruccion(WRITE, "x"));
+    c.ejecutar("MAIN");
+    EXPECT_EQ("x", 40);
+    c.ejecutar("MAIN");
+    EXPECT_EQ("x", 42);
 }
-TEST (test_calculadora, asigvar){
-
-}
+//TEST (test_calculadora, asigvar){
