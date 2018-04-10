@@ -2,10 +2,11 @@
 // Created by tomyo_000 on 4/4/2018.
 //
 #include "gtest/gtest.h"
+
 #include "../src/Calculadora.h"
 
 
-TEST(test_calculadora, prog){
+TEST(test_calculadora, gral){
     Programa p;
     Calculadora c(p);
     c.asignarVariable("x", 38);

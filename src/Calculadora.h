@@ -1,5 +1,5 @@
-#ifndef CALCULADORA_H
-#define CALCULADORA_H
+#ifndef __CALCULADORA_H__
+#define __CALCULADORA_H__
 #include "Programa.h"
 
 class Calculadora{
