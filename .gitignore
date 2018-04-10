@@ -4,6 +4,9 @@ CMakeCache.txt
 Makefile
 cmake_install.cmake
 correrTests
+.idea
+CMakeFiles
+cmake-build-debug
 *.d
 
 # Compiled Object files

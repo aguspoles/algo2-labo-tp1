@@ -6,5 +6,5 @@ CXX_FLAGS =    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-un
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test/include -I/mnt/c/Users/rocio/Desktop/tp1_base/tests/google-test 
+CXX_INCLUDES = -I/mnt/c/Users/rocio/Desktop/algo2-labo-tp1/tests/google-test/include -I/mnt/c/Users/rocio/Desktop/algo2-labo-tp1/tests/google-test 
 
