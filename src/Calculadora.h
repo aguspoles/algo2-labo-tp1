@@ -1,6 +1,7 @@
 #ifndef CALCULADORA_H
 #define CALCULADORA_H
 #include "Programa.h"
+#include <stack>
 
 class Calculadora{
     public:
@@ -20,6 +21,8 @@ class Calculadora{
 
     private:
     Programa _programa;
+    stack<int> _pila;
+    vector<Id> _memoria;
 };
 
 
