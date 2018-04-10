@@ -1,5 +1,5 @@
-#ifndef CALCULADORA_H
-#define CALCULADORA_H
+#ifndef __CALCULADORA_H__
+#define __CALCULADORA_H__
 #include "Programa.h"
 #include <stack>
 
@@ -20,9 +20,10 @@ class Calculadora{
     int valorVariable(Id idVariable) const;
 
     private:
+//    Calculadora _calc;
     Programa _programa;
-    stack<int> _pila;
-    vector<Id> _memoria;
+    Id _id;
+    int _value;
 };
 
 

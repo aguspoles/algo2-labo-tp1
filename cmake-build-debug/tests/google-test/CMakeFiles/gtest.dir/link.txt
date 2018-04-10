@@ -1,0 +1,2 @@
+C:\PROGRA~1\HASKEL~1\80460E~1.2\mingw\bin\ar.exe qc libgtest.a  CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+C:\PROGRA~1\HASKEL~1\80460E~1.2\mingw\bin\ranlib.exe libgtest.a
