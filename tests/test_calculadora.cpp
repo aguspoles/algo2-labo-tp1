@@ -63,6 +63,8 @@ TEST(test_calculadora, jumps){
     p.agregarInstruccion("main", Instruccion(SUB));
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     p.agregarInstruccion("main", Instruccion(READ, "x"));
+    EXPECT_EQ(c.valorVariable("x"), 2);
     p.agregarInstruccion("main", Instruccion(JUMPZ, 0));
     p.agregarInstruccion("main", Instruccion(JUMP, "main"));
+    EXPECT_EQ(c.valorVariable("x"), 0);
 }
