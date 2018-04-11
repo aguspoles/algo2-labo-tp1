@@ -19,5 +19,5 @@ target_link_libraries(correrTests gtest gtest_main)
 
 add_test(correrTests correrTests)
 
-set(CMAKE_CXX_FLAGS '-g -fprofile-arcs -ftest-coverage')
+set(CMAKE_CXX_FLAGS "-g -fprofile-arcs -ftest-coverage")
 set(CMAKE_CXX_OUTPUT_EXTENSION_REPLACE 1)
