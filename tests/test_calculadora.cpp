@@ -5,6 +5,19 @@
 
 #include "../src/Calculadora.h"
 
+TEST(test_calculadora, push) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(PUSH, 2));
+    Calculadora c(p);
+    c.ejecutar("M");
+}
+
+TEST(test_calculadora, add) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(ADD));
+    Calculadora c(p);
+    c.ejecutar("M");
+}
 
 TEST(test_calculadora, gral){
     Programa p;
@@ -44,6 +57,7 @@ TEST (test_calculadora, vacio){
     c.asignarVariable("z", 4);
     c.asignarVariable("w", 5);
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
+    c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), 0);
     p.agregarInstruccion("main", Instruccion(ADD));
     p.agregarInstruccion("main", Instruccion(WRITE, "y"));

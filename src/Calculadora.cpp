@@ -1,4 +1,7 @@
 #include "Calculadora.h"
+#include <iostream>
+
+using namespace std;
 
 Calculadora::Calculadora(Programa p) : _programa(p), _indiceDeInstruccionActual(0)
 {
@@ -35,13 +38,15 @@ void Calculadora::ejecutar(Id idRutina)
         Instruccion instruccion = _programa.instruccion(idRutina, i);
         switch (instruccion.operacion())
         {
-        case PUSH: {
-            _pila.push(instruccion.valor());
+        case PUSH:
+            _pila.push(instruccion.valor()) ;
             _indiceDeInstruccionActual++;
+            cout << "push" << endl;
             break;
-        }
+
 
         case ADD: {
+            cout << "add" << endl;
             if (_pila.empty())
                 _pila.push(0);
             else {
