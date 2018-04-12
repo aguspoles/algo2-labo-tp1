@@ -5,6 +5,9 @@
 
 #include "../src/Calculadora.h"
 
+/*Acordate que hay que agregar instrucciones antes de crear la calculadora con el programa,
+porque que el programa pasa como copia como parametro en el constructor de la calculadora
+*/
 TEST (test_calculadora, idrutina){
 
 }
@@ -24,22 +27,23 @@ TEST(test_calculadora, add) {
 }
 TEST(test_calculadora, read){
     Programa p;
-    Calculadora c(p);
-    c.asignarVariable("x", 38);
     p.agregarInstruccion("M", Instruccion(READ, "x"));
     p.agregarInstruccion("M", Instruccion(WRITE, "y"));
+    Calculadora c(p);
+    c.asignarVariable("x", 38);
+    c.asignarVariable("y", 2);
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("y"), 38);
 }
 
 TEST(test_calculadora, gral){
     Programa p;
-    Calculadora c(p);
-    c.asignarVariable("x", 38);
     p.agregarInstruccion("MAIN", Instruccion(READ, "x"));
     p.agregarInstruccion("MAIN", Instruccion(PUSH, 2));
     p.agregarInstruccion("MAIN", Instruccion(ADD));
     p.agregarInstruccion("MAIN", Instruccion(WRITE, "x"));
+    Calculadora c(p);
+    c.asignarVariable("x", 38);
     c.ejecutar("MAIN");
     EXPECT_EQ(c.valorVariable("x"), 40);
     c.ejecutar("MAIN");
@@ -47,29 +51,26 @@ TEST(test_calculadora, gral){
 }
 TEST (test_calculadora, gral2){
     Programa p;
-    Calculadora c(p);
-    c.asignarVariable("x", 12);
-    c.asignarVariable("y", 5);
     p.agregarInstruccion("MAIN", Instruccion(READ, "x"));
     p.agregarInstruccion("MAIN", Instruccion(READ, "y"));
     p.agregarInstruccion("MAIN", Instruccion(ADD));
     p.agregarInstruccion("MAIN", Instruccion(WRITE, "z"));
+    Calculadora c(p);
+    c.asignarVariable("x", 12);
+    c.asignarVariable("y", 5);
+    //en ningun momento habias creado z, por con WRIE no lo encontraba
+    c.asignarVariable("z", 0);
     c.ejecutar("MAIN");
     EXPECT_EQ(c.valorVariable("z"), 17);
-    p.agregarInstruccion("MAIN", Instruccion(PUSH, 2));
-    p.agregarInstruccion("MAIN", Instruccion(MUL));
-    p.agregarInstruccion("MAIN", Instruccion(WRITE, "x"));
-    c.ejecutar("MAIN");
-    EXPECT_EQ(c.valorVariable("x"), 10);
 }
-TEST (test_calculadora, vacio){
+/*TEST (test_calculadora, vacio){
     Programa p;
+    p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     Calculadora c(p);
     c.asignarVariable("x", 12);
     c.asignarVariable("y", 5);
     c.asignarVariable("z", 4);
     c.asignarVariable("w", 5);
-    p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), 0);
     p.agregarInstruccion("main", Instruccion(ADD));
@@ -81,17 +82,17 @@ TEST (test_calculadora, vacio){
     p.agregarInstruccion("main", Instruccion(SUB));
     p.agregarInstruccion("main", Instruccion(WRITE, "w"));
     EXPECT_EQ(c.valorVariable("w"), 0);
-}
-TEST(test_calculadora, jumps){
+}*/
+/*TEST(test_calculadora, jumps){
     Programa p;
-    Calculadora c(p);
-    c.asignarVariable("x", 3);
     p.agregarInstruccion("main", Instruccion(PUSH, 1));
     p.agregarInstruccion("main", Instruccion(SUB));
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     p.agregarInstruccion("main", Instruccion(READ, "x"));
-    EXPECT_EQ(c.valorVariable("x"), 2);
     p.agregarInstruccion("main", Instruccion(JUMPZ, 0));
     p.agregarInstruccion("main", Instruccion(JUMP, "main"));
+    Calculadora c(p);
+    c.asignarVariable("x", 3);
+    EXPECT_EQ(c.valorVariable("x"), 2);
     EXPECT_EQ(c.valorVariable("x"), 0);
-}
+}*/

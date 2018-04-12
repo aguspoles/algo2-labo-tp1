@@ -1,4 +1,5 @@
 # Prerequisites
+#ignore this files from cmake
 .vscode
 CMakeCache.txt
 *Makefile

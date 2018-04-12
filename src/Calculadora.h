@@ -5,6 +5,13 @@
 
 class Calculadora
 {
+private:
+    stack<int> _pila;
+    Programa _programa;
+    vector<std::pair<Id, int>> _memoria;
+    Id _rutinaActual;
+
+    void ejecutarInstruccion(Operacion op, Id nombre, int valor);
   public:
     //Calcu con programa cargado
     Calculadora(Programa p);
@@ -20,12 +27,6 @@ class Calculadora
     //Si nunca se le dio valor a dicha variable, se asume que es 0;
     int valorVariable(Id idVariable) const;
 
-private:
-    stack<int> _pila;
-    Programa _programa;
-    vector<std::pair<Id, int>> _memoria;
-    Id _rutinaActual;
-    int _indiceDeInstruccionActual;
 };
 
 #endif
