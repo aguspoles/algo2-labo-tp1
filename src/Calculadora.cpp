@@ -27,8 +27,7 @@ void Calculadora::asignarVariable(Id idVariable, int valor)
 
 void Calculadora::ejecutar(Id idRutina)
 {
-    if (!_programa.esRutinaExistente(idRutina))
-        return;
+    if (!_programa.esRutinaExistente(idRutina)) return;
 
     _rutinaActual = idRutina;
     _indiceDeInstruccionActual = 0;
@@ -39,7 +38,7 @@ void Calculadora::ejecutar(Id idRutina)
         switch (instruccion.operacion())
         {
         case PUSH:
-            _pila.push(instruccion.valor()) ;
+            _pila.push(instruccion.valor());
             _indiceDeInstruccionActual++;
             cout << "push" << endl;
             break;

@@ -20,10 +20,10 @@ class Calculadora
     //Si nunca se le dio valor a dicha variable, se asume que es 0;
     int valorVariable(Id idVariable) const;
 
-  private:
+private:
+    stack<int> _pila;
     Programa _programa;
     vector<std::pair<Id, int>> _memoria;
-    stack<int> _pila;
     Id _rutinaActual;
     int _indiceDeInstruccionActual;
 };

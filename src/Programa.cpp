@@ -14,8 +14,7 @@ void Programa::agregarInstruccion(Id idRutina, Instruccion instruccion){
 }
 
 bool Programa::esRutinaExistente(Id idRutina) const{
-    if(_rutinas.find(idRutina) == _rutinas.end())
-       return false;
+    if(_rutinas.find(idRutina) == _rutinas.end()) return false;
     return true;
 }
 

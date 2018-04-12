@@ -5,6 +5,10 @@
 
 #include "../src/Calculadora.h"
 
+TEST (test_calculadora, idrutina){
+
+}
+
 TEST(test_calculadora, push) {
     Programa p;
     p.agregarInstruccion("M", Instruccion(PUSH, 2));
@@ -17,6 +21,15 @@ TEST(test_calculadora, add) {
     p.agregarInstruccion("M", Instruccion(ADD));
     Calculadora c(p);
     c.ejecutar("M");
+}
+TEST(test_calculadora, read){
+    Programa p;
+    Calculadora c(p);
+    c.asignarVariable("x", 38);
+    p.agregarInstruccion("M", Instruccion(READ, "x"));
+    p.agregarInstruccion("M", Instruccion(WRITE, "y"));
+    c.ejecutar("M");
+    EXPECT_EQ(c.valorVariable("y"), 38);
 }
 
 TEST(test_calculadora, gral){
