@@ -55,12 +55,10 @@ void Calculadora::ejecutarInstruccion(Operacion Op, Id Nombre, int Valor)
     {
     case PUSH:
         _pila.push(Valor);
-        cout << "push" << endl;
         break;
 
     case ADD:
     {
-        cout << "add" << endl;
         if (_pila.empty())
             _pila.push(0);
         else
