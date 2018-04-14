@@ -86,7 +86,7 @@ void Calculadora::ejecutarInstruccion(Operacion Op, Id Nombre, int Valor)
                 _pila.push(0);
             int b = _pila.top();
             _pila.pop();
-            _pila.push(a - b);
+            _pila.push(b - a);
         }
         break;
     }
@@ -100,7 +100,7 @@ void Calculadora::ejecutarInstruccion(Operacion Op, Id Nombre, int Valor)
             int a = _pila.top();
             _pila.pop();
             if (_pila.empty())
-                _pila.push(1);
+                _pila.push(0);
             int b = _pila.top();
             _pila.pop();
             _pila.push(a * b);
@@ -112,10 +112,20 @@ void Calculadora::ejecutarInstruccion(Operacion Op, Id Nombre, int Valor)
     {
         int valor = _pila.top();
         _pila.pop();
-        for (int i = 0; i < _memoria.size(); i++)
+        int i =0;
+        while (i < _memoria.size() and _memoria[i].first != Nombre)
         {
-            if (_memoria[i].first == Nombre)
-                _memoria[i].second = valor;
+            i++;
+        }
+        if (i == _memoria.size())
+        {
+            std::pair<Id, int> variable(Nombre, valor);
+            _memoria.push_back(variable);
+        }
+        else
+        {
+            _memoria[i].first = Nombre;
+            _memoria[i].second = valor;
         }
         break;
     }

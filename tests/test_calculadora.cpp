@@ -29,7 +29,7 @@ TEST(test_calculadora, add) {
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("X"), 0);
 }
-TEST(test_calculadora, mul) { //si la pila tiene un solo elemento no deberia dar 0?
+TEST(test_calculadora, mul) {
     Programa p;
     p.agregarInstruccion("M", Instruccion(PUSH, 2));
     p.agregarInstruccion("M", Instruccion(MUL));
@@ -38,6 +38,38 @@ TEST(test_calculadora, mul) { //si la pila tiene un solo elemento no deberia dar
     c.asignarVariable("X", 5);
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("X"), 0);
+}
+TEST(test_calculadora, mul2) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(PUSH, 2));
+    p.agregarInstruccion("M", Instruccion(PUSH, 10));
+    p.agregarInstruccion("M", Instruccion(MUL));
+    p.agregarInstruccion("M", Instruccion(WRITE, "X"));
+    Calculadora c(p);
+    c.asignarVariable("X", 5);
+    c.ejecutar("M");
+    EXPECT_EQ(c.valorVariable("X"), 20);
+}
+TEST(test_calculadora, sub) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(PUSH, 2));
+    p.agregarInstruccion("M", Instruccion(SUB));
+    p.agregarInstruccion("M", Instruccion(WRITE, "X"));
+    Calculadora c(p);
+    c.asignarVariable("X", 5);
+    c.ejecutar("M");
+    EXPECT_EQ(c.valorVariable("X"), -2);
+}
+TEST(test_calculadora, sub2) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(PUSH, 28));
+    p.agregarInstruccion("M", Instruccion(PUSH, 20));
+    p.agregarInstruccion("M", Instruccion(SUB));
+    p.agregarInstruccion("M", Instruccion(WRITE, "X"));
+    Calculadora c(p);
+    c.asignarVariable("X", 5);
+    c.ejecutar("M");
+    EXPECT_EQ(c.valorVariable("X"), 8);
 }
 TEST(test_calculadora, read){
     Programa p;
@@ -72,12 +104,10 @@ TEST (test_calculadora, gral2){
     Calculadora c(p);
     c.asignarVariable("x", 12);
     c.asignarVariable("y", 5);
-    //en ningun momento habias creado z, por con WRIE no lo encontraba
-    c.asignarVariable("z", 0);
     c.ejecutar("MAIN");
     EXPECT_EQ(c.valorVariable("z"), 17);
 }
-/*TEST (test_calculadora, vacio){
+TEST (test_calculadora, vacio){
     Programa p;
     p.agregarInstruccion("main", Instruccion(READ, "x"));
     p.agregarInstruccion("main", Instruccion(READ, "y"));
@@ -100,7 +130,7 @@ TEST (test_calculadora, gral2){
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("w"), 0);
 }
-TEST(test_calculadora, jumps){
+/*TEST(test_calculadora, jumps){
     Programa p;
     p.agregarInstruccion("main", Instruccion(PUSH, 1));
     p.agregarInstruccion("main", Instruccion(SUB));
