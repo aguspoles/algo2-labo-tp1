@@ -144,11 +144,11 @@ TEST(test_calculadora, jump2) {
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), 0);
 }
-TEST(test_calculadora, varrep){
+TEST(test_calculadora, varyrut){
     Programa p;
-    p.agregarInstruccion("main", Instruccion(PUSH, 1));
     Calculadora c(p);
     c.asignarVariable("x", 5);
     c.asignarVariable("x", 2);
+    c.ejecutar("m");
     EXPECT_EQ(c.valorVariable("x"), 2);
 }
