@@ -161,9 +161,4 @@ TEST(test_calculadora, varyrut){
     c.ejecutar("m");
     EXPECT_EQ(c.valorVariable("a"), 0);
     EXPECT_EQ(c.valorVariable("x"), 2);
-}/*
-TEST(test_calculadora, failinst){
-        Programa p;
-        p.agregarInstruccion("m", Instruccion(RED, "x"));
-
-}*/
+}
