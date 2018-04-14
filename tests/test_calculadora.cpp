@@ -130,17 +130,31 @@ TEST (test_calculadora, vacio){
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("w"), 0);
 }
-/*TEST(test_calculadora, jumps){
+TEST(test_calculadora, jumps){
     Programa p;
     p.agregarInstruccion("main", Instruccion(PUSH, 1));
     p.agregarInstruccion("main", Instruccion(SUB));
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
-    p.agregarInstruccion("main", Instruccion(READ, "x"));
-    p.agregarInstruccion("main", Instruccion(JUMPZ, 0));
-    p.agregarInstruccion("main", Instruccion(JUMP, "main"));
+    p.agregarInstruccion("m", Instruccion(READ, "x"));
+//    p.agregarInstruccion("main", Instruccion(JUMPZ, 7));
+    p.agregarInstruccion("main", Instruccion(JUMP, "m"));
     Calculadora c(p);
     c.asignarVariable("x", 3);
     c.ejecutar("main");
-    EXPECT_EQ(c.valorVariable("x"), 2);
+    EXPECT_EQ(c.valorVariable("x"), -1);
+//    EXPECT_EQ(c.valorVariable("x"), 0);
+}
+TEST(test_calculadora, jump2) {
+    Programa p;
+    p.agregarInstruccion("main", Instruccion(PUSH, 1));
+    p.agregarInstruccion("main", Instruccion(READ, "x"));
+    p.agregarInstruccion("main", Instruccion(SUB));
+    p.agregarInstruccion("main", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("m", Instruccion(READ, "x"));
+    p.agregarInstruccion("main", Instruccion(JUMPZ, "m"));
+    //  p.agregarInstruccion("main", Instruccion(JUMP, "m"));
+    Calculadora c(p);
+    c.asignarVariable("x", 1);
+    c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), 0);
-}*/
+}
