@@ -1,14 +1,5 @@
-//
-// Created by tomyo_000 on 4/4/2018.
-//
 #include "gtest/gtest.h"
-
 #include "../src/Calculadora.h"
-
-/*Acordate que hay que agregar instrucciones antes de crear la calculadora con el programa,
-porque que el programa pasa como copia como parametro en el constructor de la calculadora
-*/
-
 
 TEST(test_calculadora, push) {
     Programa p;
@@ -19,7 +10,6 @@ TEST(test_calculadora, push) {
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("x"), 2);
 }
-
 TEST(test_calculadora, add) {
     Programa p;
     p.agregarInstruccion("M", Instruccion(ADD));
@@ -81,7 +71,6 @@ TEST(test_calculadora, read){
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("y"), 38);
 }
-
 TEST(test_calculadora, gral){
     Programa p;
     p.agregarInstruccion("MAIN", Instruccion(READ, "x"));
@@ -125,7 +114,7 @@ TEST (test_calculadora, vacio){
     EXPECT_EQ(c.valorVariable("y"), 5);
     c.asignarVariable("z", 4);
     c.ejecutar("main");
-    EXPECT_EQ(c.valorVariable("z"), 0); //devuelve 17 (la suma de X e Y), pero deberia dar 0, porque mul de <17> es 0
+    EXPECT_EQ(c.valorVariable("z"), 0);
     c.asignarVariable("w", 5);
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("w"), 0);
@@ -136,13 +125,11 @@ TEST(test_calculadora, jumps){
     p.agregarInstruccion("main", Instruccion(SUB));
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     p.agregarInstruccion("m", Instruccion(READ, "x"));
-//    p.agregarInstruccion("main", Instruccion(JUMPZ, 7));
     p.agregarInstruccion("main", Instruccion(JUMP, "m"));
     Calculadora c(p);
     c.asignarVariable("x", 3);
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), -1);
-//    EXPECT_EQ(c.valorVariable("x"), 0);
 }
 TEST(test_calculadora, jump2) {
     Programa p;
@@ -152,9 +139,16 @@ TEST(test_calculadora, jump2) {
     p.agregarInstruccion("main", Instruccion(WRITE, "x"));
     p.agregarInstruccion("m", Instruccion(READ, "x"));
     p.agregarInstruccion("main", Instruccion(JUMPZ, "m"));
-    //  p.agregarInstruccion("main", Instruccion(JUMP, "m"));
     Calculadora c(p);
     c.asignarVariable("x", 1);
     c.ejecutar("main");
     EXPECT_EQ(c.valorVariable("x"), 0);
+}
+TEST(test_calculadora, varrep){
+    Programa p;
+    p.agregarInstruccion("main", Instruccion(PUSH, 1));
+    Calculadora c(p);
+    c.asignarVariable("x", 5);
+    c.asignarVariable("x", 2);
+    EXPECT_EQ(c.valorVariable("x"), 2);
 }
