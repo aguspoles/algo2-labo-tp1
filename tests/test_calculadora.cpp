@@ -40,6 +40,15 @@ TEST(test_calculadora, mul2) {
     c.ejecutar("M");
     EXPECT_EQ(c.valorVariable("X"), 20);
 }
+TEST(test_calculadora, mul3) {
+    Programa p;
+    p.agregarInstruccion("M", Instruccion(MUL));
+    p.agregarInstruccion("M", Instruccion(WRITE, "X"));
+    Calculadora c(p);
+    c.asignarVariable("X", 5);
+    c.ejecutar("M");
+    EXPECT_EQ(c.valorVariable("X"), 0);
+}
 TEST(test_calculadora, sub) {
     Programa p;
     p.agregarInstruccion("M", Instruccion(PUSH, 2));
@@ -150,5 +159,11 @@ TEST(test_calculadora, varyrut){
     c.asignarVariable("x", 5);
     c.asignarVariable("x", 2);
     c.ejecutar("m");
+    EXPECT_EQ(c.valorVariable("a"), 0);
     EXPECT_EQ(c.valorVariable("x"), 2);
-}
+}/*
+TEST(test_calculadora, failinst){
+        Programa p;
+        p.agregarInstruccion("m", Instruccion(RED, "x"));
+
+}*/
