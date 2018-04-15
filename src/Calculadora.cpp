@@ -110,24 +110,11 @@ void Calculadora::ejecutarInstruccion(Operacion Op, Id Nombre, int Valor)
 
     case WRITE:
     {
-        int valor = _pila.top();
-        _pila.pop();
-        int i =0;
-        while (i < _memoria.size() and _memoria[i].first != Nombre)
-        {
-            i++;
-        }
-        if (i == _memoria.size())
-        {
-            std::pair<Id, int> variable(Nombre, valor);
-            _memoria.push_back(variable);
-        }
-        else
-        {
-            _memoria[i].first = Nombre;
-            _memoria[i].second = valor;
-        }
-        break;
+        int valor;
+        if (!_pila.empty())
+            valor = _pila.top();
+        else valor = 0;
+        asignarVariable(Nombre, valor);
     }
 
     case READ:
